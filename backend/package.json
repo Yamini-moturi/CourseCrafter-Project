@@ -8,7 +8,7 @@
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "nishal <nishalgoud17@gmail.com>",
+  "author": "Yamini-moturi <yaminimoturi@gmail.com",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
