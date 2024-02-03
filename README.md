@@ -2,6 +2,7 @@
 A Full stack web application
 
 # VUE Project setup
+ To install and configure frontend
 
 ```
 cd frontend
@@ -39,12 +40,12 @@ db.createUser({
 ## create database 
 
 ```
- use esiea
+ use dbname
 ```
 
 ## create user for the database to login in 
 
 ```
- db.createUser({ user: 'admin', pwd: 'admin', roles: [{ role: 'readWrite', db: 'esiea' }] });
+ db.createUser({ user: 'admin', pwd: 'admin', roles: [{ role: 'readWrite', db: 'dbname' }] });
 
 ```
