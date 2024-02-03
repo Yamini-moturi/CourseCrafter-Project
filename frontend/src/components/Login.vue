@@ -55,4 +55,3 @@ export default {
     </v-card>
   </div>
 </template>
-

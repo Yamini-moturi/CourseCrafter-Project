@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue';
-import {useRouter } from 'vue-router'
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import ImageService from '@/services/ImageService'
 
 const nameRules = [(v) => !/^\s*$/.test(v) || 'Image Name is required']
@@ -17,7 +17,7 @@ const description = ref('')
 const form = ref(null)
 
 const addImage = async () => {
-  const {valid} = await form.value.validate()
+  const { valid } = await form.value.validate()
 
   if (valid) {
     loading.value = true

@@ -18,12 +18,8 @@ const logout = () => {
 <template>
   <v-navigation-drawer expand-on-hover rail location="left">
     <v-list>
-      <v-list-item
-        :title="user.firstname"
-        :subtitle="user.email"
-        @click="navigate('profile')"
-      >
-    </v-list-item>
+      <v-list-item :title="user.firstname" :subtitle="user.email" @click="navigate('profile')">
+      </v-list-item>
     </v-list>
 
     <v-divider></v-divider>

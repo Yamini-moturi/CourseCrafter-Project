@@ -12,7 +12,7 @@ export default {
       },
       { title: 'Description', key: 'description' },
       { title: 'Image', key: 'url' },
-      {title: 'CreatedAt' , key: 'createdAt'}
+      { title: 'CreatedAt', key: 'createdAt' }
     ],
     imageList: [],
     search: '',

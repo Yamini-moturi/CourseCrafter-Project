@@ -9,7 +9,7 @@ export const useAuthStore = defineStore('auth', () => {
     count.value++
   }
   function setIsLoggedIn(value) {
-    isLoggedIn.value =value;
+    isLoggedIn.value = value
   }
 
   return { count, doubleCount, increment, isLoggedIn, setIsLoggedIn }

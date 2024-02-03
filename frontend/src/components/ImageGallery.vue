@@ -30,11 +30,8 @@ export default {
     </template>
   </v-banner>
   <v-row>
-    <v-col cols="10"> 
-      <v-text-field
-        v-model="limit"
-        label="Number of Images"
-      ></v-text-field>
+    <v-col cols="10">
+      <v-text-field v-model="limit" label="Number of Images"></v-text-field>
     </v-col>
     <v-col cols="2">
       <v-switch
@@ -48,7 +45,15 @@ export default {
   </v-row>
   <v-card class="mx-5 my-2 pa-3">
     <v-row>
-      <v-col v-for="n in parseInt(limit)" :key="n" class="d-flex child-flex" cols="3" sm="4" md="3" lg="2">
+      <v-col
+        v-for="n in parseInt(limit)"
+        :key="n"
+        class="d-flex child-flex"
+        cols="3"
+        sm="4"
+        md="3"
+        lg="2"
+      >
         <v-card>
           <v-img
             :src="`https://picsum.photos/500/300?image=${n * 5 + 10}${

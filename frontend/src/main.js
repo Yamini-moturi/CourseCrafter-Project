@@ -18,9 +18,9 @@ import * as labsComponents from 'vuetify/labs/components'
 const vuetify = createVuetify({
   components: {
     ...components,
-    ...labsComponents,
+    ...labsComponents
   },
-  directives,
+  directives
 })
 
 const app = createApp(App)

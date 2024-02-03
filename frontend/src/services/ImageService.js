@@ -1,5 +1,5 @@
-import axios from 'axios';
-import queryString from 'query-string';
+import axios from 'axios'
+import queryString from 'query-string'
 
 import AuthService from '@/services/AuthService'
 
@@ -8,10 +8,10 @@ class ImageService {
     try {
       const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/images`, imageData, {
         headers: {
-            Authorization: `Bearer ${AuthService.getAccessToken()}`
+          Authorization: `Bearer ${AuthService.getAccessToken()}`
         }
       })
-      return data;
+      return data
     } catch (err) {
       return {
         success: false,
@@ -21,15 +21,17 @@ class ImageService {
   }
 
   async getImages(imageData) {
-
     try {
-      const queryStr = queryString.stringify(imageData);
-      const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/images?${queryStr}&select=name,url,description,createdAt`, {
-        headers: {
+      const queryStr = queryString.stringify(imageData)
+      const { data } = await axios.get(
+        `${import.meta.env.VITE_API_URL}/images?${queryStr}&select=name,url,description,createdAt`,
+        {
+          headers: {
             Authorization: `Bearer ${AuthService.getAccessToken()}`
+          }
         }
-      })
-      return data;
+      )
+      return data
     } catch (err) {
       return {
         success: false,

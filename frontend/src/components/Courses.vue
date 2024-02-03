@@ -73,14 +73,13 @@ export default {
         tools: [],
         prerequisities: []
       }
-    ],
-   })
+    ]
+  })
 }
 </script>
 
 <template>
-
-  <div class="text-h4 my-4"  align="center">Courses</div>
+  <div class="text-h4 my-4" align="center">Courses</div>
   <v-divider class="my-2"></v-divider>
   <v-expansion-panels variant="popout" class="pa-4">
     <v-expansion-panel v-for="(course, i) in courses" :key="i" hide-actions>
@@ -106,7 +105,7 @@ export default {
           <v-item-group v-if="course.contentAndChapters.length">
             <div class="text-caption mb-2"><strong>Content and Chapters</strong></div>
             <v-item v-for="(chapter, i) in course.contentAndChapters" :key="tool">
-              <div>{{ `${i+1}) ` }}  {{ chapter }}</div>
+              <div>{{ `${i + 1}) ` }} {{ chapter }}</div>
             </v-item>
           </v-item-group>
           <v-divider class="my-2"></v-divider>
